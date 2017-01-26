@@ -1,3 +1,11 @@
 <h1>
   {{title}}
 </h1>
+
+
+<input type="number" maxlength="2" [(ngModel)]="rowCols">
+
+<hr>
+{{rowCols}}
+
+<app-bullshit-card [rowCols]="rowCols"></app-bullshit-card>
